@@ -4,8 +4,8 @@
 title:               Yujing Ren
 tagline:             'Personal Blogs'
 description:         Hi, you've reached Yujing Ren's Blogs. Feel free to go around and contact me!
-url:                 ''
-baseurl:             'yujinghome/'
+url:                 'https://imrenyujing.github.io/'
+baseurl:             '/yujinghome'
 
 # About/contact
 author:
