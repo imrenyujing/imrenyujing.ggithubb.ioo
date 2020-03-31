@@ -2,7 +2,9 @@
 layout: default
 ---
 <article class="post">
-  <h1 class="text-title">{{ page.title }}</h1>
-  
+  <center><span style="font-size: 30px;color:#0569ff;">{{ page.title }}</span> <br></center>
+  <p style="text-align: center;">{{ page.time }}</p>
   {{ content }}
+
+  <p style="text-align: right;color: #999999;font-size: medium;">Last modified: {{ page.lastmodify }}</p>
 </article>
