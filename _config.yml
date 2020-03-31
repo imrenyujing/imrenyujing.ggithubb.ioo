@@ -5,7 +5,7 @@ title:               Yujing Ren
 tagline:             'Personal Blogs'
 description:         Hi, you've reached Yujing Ren's Blogs. Feel free to go around and contact me!
 url:                 'https://imrenyujing.github.io'
-baseurl:             '/yujinghome'
+baseurl:             ''
 
 # About/contact
 author:
@@ -29,16 +29,16 @@ collections:
     output: true
 
 # Markdown specs
-markdown: kramdown
+markdown: CommonMarkGhPages
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  footnote_backlink: "&#x21a9;&#xfe0e;"
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+# kramdown:
+#   auto_ids:       true
+#   footnote_nr:    1
+#   entity_output:  as_char
+#   footnote_backlink: "&#x21a9;&#xfe0e;"
+#   toc_levels:     1..6
+#   smart_quotes:   lsquo,rsquo,ldquo,rdquo
+#   enable_coderay: false
 
 # Exclusions from the final site
 exclude:

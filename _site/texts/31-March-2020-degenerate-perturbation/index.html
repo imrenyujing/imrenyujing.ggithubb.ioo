@@ -5,7 +5,7 @@
   
   
   <!-- Canonical link to help search engines -->
-  <link rel="canonical" href="http://localhost:4000/yujinghome/blogs/" />
+  <link rel="canonical" href="http://localhost:4000/yujinghome/texts/31-March-2020-degenerate-perturbation/" />
 
   <!-- Basic meta elements -->
   <meta charset="utf-8" />
@@ -15,22 +15,22 @@
 
   <title>
     
-      Blogs
+      Some thoughts towards degenerate perturbation
     
   </title>
 
   <!-- Dublin Core metadata for Zotero -->
-  <meta property="dc:title" content="Blogs" />
+  <meta property="dc:title" content="Some thoughts towards degenerate perturbation" />
   <meta property="dc:creator" content="Yujing Ren" />
-  <meta property="dc:identifier" content="http://localhost:4000/yujinghome/blogs/" />
+  <meta property="dc:identifier" content="http://localhost:4000/yujinghome/texts/31-March-2020-degenerate-perturbation/" />
   
   
   
   <meta property="dc:source" content="Yujing Ren" />
 
   <!-- Open Graph metadata -->
-  <meta property="og:title" content="Blogs" />
-  <meta property="og:url" content="http://localhost:4000/yujinghome/blogs/" />
+  <meta property="og:title" content="Some thoughts towards degenerate perturbation" />
+  <meta property="og:url" content="http://localhost:4000/yujinghome/texts/31-March-2020-degenerate-perturbation/" />
   <meta property="og:image" content="http://localhost:4000/yujinghome/assets/open-graph-logo.png" />
   <meta property="og:image:width" content="200" />
   <meta property="og:image:height" content="200" />
@@ -44,6 +44,26 @@
 
   <!-- Enable MathJax support -->
   
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\(', '\)'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  
+
   <!-- CSS link -->
   <link rel="stylesheet" href="/yujinghome/assets/css/style.css" />
 
@@ -93,7 +113,7 @@
     
       
         
-          <a class="sidebar-nav-item active" href="/yujinghome/blogs/">Blogs</a>
+          <a class="sidebar-nav-item" href="/yujinghome/blogs/">Blogs</a>
         
       
     
@@ -117,7 +137,7 @@
       document.head.appendChild(hypothesis);"><a class="sidebar-nav-item">Annotate me</a></span>
 
 
-    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/yujinghome/blogs//" data-proofer-ignore>Annotate me</a>
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/yujinghome/texts/31-March-2020-degenerate-perturbation//" data-proofer-ignore>Annotate me</a>
     <script src="https://hypothes.is/embed.js" async></script>
     -->
 
@@ -150,26 +170,26 @@
       </header>
 
       <main class="container content" id="main">
-        <article class="page">
-  <h1 class="page-title">Blogs</h1>
-  <hr>
-
-<div class = "blogs-list">
-
-    <a href="/yujinghome/texts/31-March-2020-degenerate-perturbation/" style="font-size: 25px;">Some thoughts towards degenerate perturbation</a> <br>
-    <span style="font-size:15px;color:#999999;">31 March, 2020</span> <br>
-
-    
-    <hr>
-
-    <a href="/yujinghome/texts/hello-jekyll-blog/" style="font-size: 25px;">Hello jekyll blogs</a> <br>
-    <span style="font-size:15px;color:#999999;">29 March, 2020</span> <br>
-
-    
-    <hr>
-
-</div>
-
+        <article class="post">
+  <h1 class="text-title">Some thoughts towards degenerate perturbation</h1>
+  
+  <h2 id="non-degenerate-perturbation-result">Non-degenerate perturbation result</h2>
+<p>We have two Hamiltonian, one is $H_0$, and another is perturbation (H'). For any eigen state of $H_0$, $\phi_k^{(0)}$, which is nondegenerate, the first order energy correction is</p>
+<p>$$
+(1)\ \ E_k^{(1)} = \langle\phi_k^{(0)}|H'|\phi_k^{(0)}\rangle
+$$</p>
+<h2 id="about-degenerate-perturbation">About degenerate perturbation</h2>
+<p>We also have two Hamiltonian $H_0$ and $H'$. What is different now is that we're interested in two degenerate state, $\phi_{k1}^{(0)}$ and $\phi_{k2}^{(0)}$, with same eigen value $E^{(0)}$. It seems that using Equation (1) causes no problem, but the real problem happens to the 1st order wave function correction:</p>
+<p>$$
+(2)\ \ \phi_{n}^{(1)}=\sum_{m \neq n} \frac{\left\langle\phi_{m}^{(0)}\left|H^{\prime}\right| \psi_{n}^{(0)}\right\rangle}{\left(E_{n}^{(0)}-E_{m}^{(0)}\right)} \phi_{m}^{(0)}
+$$</p>
+<p>If there are two degenerate states, the denominator of Equation (2)'s RHS will be zero.</p>
+<p>Compared to Non-degenerate perturbation, the most different part of degenerate perturbation is that we are adding perturbation to $\psi^{(0)}$, linear superposed state of $\phi_{k1}^{(0)}$ and $\phi_{k2}^{(0)}$, instead of $\phi_{k1}^{(0)}$ or $\phi_{k2}^{(0)}$ alone.</p>
+<p>Using $\psi^{(0)} = \alpha \phi_{k1}^{(0)} + \beta \phi_{k2}^{(0)}$, and $\psi = \psi^{(0)}+\lambda \psi^{(1)} + \cdots$, we get the result that, for 1st order energy correction, a eigen value problem of the matrix $(H')_{ij}$ must be solved. $(H')_{ij} = \langle\phi_{ki}^{(0)}|H'|\phi_{kj}^{(0)}\rangle$. The values of ( \alpha ) and ( \beta ) are determined by the eigen vectors of $(H')_{ij}$.</p>
+<p>One way to understand this is to remind yourself what is the basic procedure to solve a quantum mechanics problem. First write down the Hamiltonian in a specific representation, which is usually a matrix $H$. Then solve the eigen value problem of this matrix $H$. The representation can be chosen arbitrarily, with different difficulty in different representations.</p>
+<p>Now we have a representation $A^{(0)}$, which is composed of the eigen states of non-perturbation Hamiltonian $H_0$. What is the eigen value of $H_0 + H'$? Easy, just solve $(H_0 + H')\phi = E\phi$ in the representation $A^{(0)}$, which means you diagonalized $(H_0 + H')_{ij} = \langle \phi^{(0)}_i |H_0 + H'| \phi^{(0)}_j \rangle$ in the whole Hilbert space. But that is only possible for some easy problems. Even with computers, this means lots of electricity energy gone.</p>
+<p>So, physicists said that $H'$ is small. You only need to consider eigen values of $(H')_{ij}$, because they are small compared to eigen values of $(H_0)_{ij}$. Many non-diagonal elements of $( H')_{ij}$ are very close to zero, so you don't need to solve a eigen value problem. Just calculating the diagonal element $\langle\phi_k^{(0)}|H'|\phi_k^{(0)}\rangle$ will be good enough.</p>
+<p>The only exception is when there are degenerate states. In this case, $(H')_{ij}$ is not closely diagonalized but closely <strong>block diagonalized</strong>. What you need to do is just diagonalized $(H')_{ij}$ in the degenerate subspace, with smaller matrix dimensions to diagonalize.</p>
 
 </article>
 
