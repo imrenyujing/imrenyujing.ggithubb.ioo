@@ -3,6 +3,7 @@ layout: post
 title: Hello jekyll blogs
 time: 29 March, 2020
 lastmodify: 29 March, 2020
+intro: I successfully "build" a personal blog with Jekyll and Github Pages. Still it's not optimal. Besides someday I may move to Wordpress.
 ---
 
 This is a "Hello World" blog for my new jekyll blog!

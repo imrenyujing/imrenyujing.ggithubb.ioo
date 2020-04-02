@@ -4,6 +4,7 @@ title: Some thoughts towards degenerate perturbation
 time: 31 March, 2020
 lastmodify: 31 March, 2020 
 mathjax: true
+intro: When learning perturbation theory in Quantum Mechanics, I got into thoughts about what it truely means. Well, I reached the conclusion that perturbation is still about solving a matrix eigenvalue problem just like all other Quantum Mechanics problem, only with some small mathematical assumption for reducing calculation.
 ---
 
 ## Non-degenerate perturbation result

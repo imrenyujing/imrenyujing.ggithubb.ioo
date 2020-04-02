@@ -3,17 +3,16 @@ layout: page
 title: Blogs
 ---
 
-<hr>
-
 <div class = "blogs-list">
 {% for item in site.texts %}
+    <hr>
     <a href="{{ site.baseurl }}{{ item.url }}" style="font-size: 25px;">{{ item.title }}</a> <br>
     <span style="font-size:15px;color:#999999;">{{ item.time }}</span> <br>
 
     {% if item.intro %}
-        {{item.intro}}
+        <p style="font-size: 18px;"> {{item.intro}} </p>
     {% endif %}
-    <hr>
+    
 {% endfor %}
 </div>
 

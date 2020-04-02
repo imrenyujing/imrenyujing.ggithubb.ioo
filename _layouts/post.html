@@ -4,7 +4,18 @@ layout: default
 <article class="post">
   <center><span style="font-size: 30px;color:#0569ff;">{{ page.title }}</span> <br></center>
   <p style="text-align: center;">{{ page.time }}</p>
+
+  {% if page.intro %}
+  <br>
+  <p style="font-size: 18px; text-align: center;font-style: italic;"><b> Introduction: </b>{{ page.intro }}</p>
+  <br>
+  {% endif %}
+
+  <hr>
+
   {{ content }}
 
   <p style="text-align: right;color: #999999;font-size: medium;">Last modified: {{ page.lastmodify }}</p>
+
+  <p style="font-size: 25px;"><a href="{{site.baseurl}}/blogs/">&larr;  Back to blogs list</a></p>
 </article>
