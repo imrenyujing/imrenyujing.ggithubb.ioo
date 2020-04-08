@@ -7,7 +7,3 @@ title: Contact me
 
 - renyj at pku.edu.cn
 - renyjchina at gmail.com
-
-## Phone
-
-- China mainland phone number: +86 13681222199

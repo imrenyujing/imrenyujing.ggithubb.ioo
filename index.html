@@ -14,9 +14,9 @@ title: Home
 <hr>
 
 <div class="toc">
-  <h2> <a href="{{ site.baseurl }}/blogs/">Blogs</a> </h2>
+  <h2>  Blogs </h2>
   <ul class="texts">
-  {% for item in site.texts %}
+  {% for item in site.texts reversed limit:10 %}
     <li class="text-title">
       <span style="font-size:12px;color:#999999;">{{ item.time }}</span>
       <a href="{{ site.baseurl }}{{ item.url }}">
@@ -24,5 +24,7 @@ title: Home
       </a>
     </li>
   {% endfor %}
+    <li>......</li>
   </ul>
+  <p> Complete list of blogs <a href="{{ site.baseurl }}/blogs/">here</a>.</p>
 </div>

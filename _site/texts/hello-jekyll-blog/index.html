@@ -44,6 +44,10 @@
 
   <!-- Enable MathJax support -->
   
+
+  <!-- Enable KaTeX support-->
+  
+
   <!-- CSS link -->
   <link rel="stylesheet" href="/assets/css/style.css" />
 
@@ -162,10 +166,12 @@
 
   <hr>
 
-  <p>This is a &quot;Hello World&quot; blog for my new jekyll blog!</p>
+  <p>This is a “Hello World” blog for my new jekyll blog!</p>
+
 <p>People say jekyll is easy to use. Well, compared to Wordpress, yes. But I still encountered some technical problems
 when configuring all these things. Good news is, this blog is basically working now!</p>
-<p>I'm considering moving everything from Google Sites to Github Pages. That means I still have many things to learn,
+
+<p>I’m considering moving everything from Google Sites to Github Pages. That means I still have many things to learn,
 including assets management and designing my own layout.</p>
 
 
@@ -234,5 +240,22 @@ including assets management and designing my own layout.</p>
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+
+<!-- KaTeX -->
+<!-- <script>
+  $("script[type='math/tex']").replaceWith(function() {
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function() {
+      var tex = $(this).html();
+      // replace() here is due to CDATA wrapper (#224). KaTeX chokes on the % character,
+      // which is unfortunate (and should probably be reported).
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
+
   </body>
-</html>
+</html> -->

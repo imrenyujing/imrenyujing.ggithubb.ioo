@@ -9,11 +9,13 @@ intro: When learning perturbation theory in Quantum Mechanics, I got into though
 
 ## Non-degenerate perturbation result
 
-We have two Hamiltonian, one is $H_0$, and another is perturbation \(H'\). For any eigen state of $H_0$, $\phi_k^{(0)}$, which is nondegenerate, the first order energy correction is
+We have two Hamiltonian, one is `$H_0$`, and another is perturbation `$H'$`. For any eigen state of $H_0$, $\phi_k^{(0)}$, which is nondegenerate, the first order energy correction is
 
+`
 $$
 (1)\ \ E_k^{(1)} = \langle\phi_k^{(0)}|H'|\phi_k^{(0)}\rangle
 $$
+`
 
 ## About degenerate perturbation
 

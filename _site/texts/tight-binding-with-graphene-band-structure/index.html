@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head prefix="og: http://ogp.me/ns#; dc: http://purl.org/dc/terms/#">
+  
+  
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="http://localhost:4000/texts/tight-binding-with-graphene-band-structure/" />
+
+  <!-- Basic meta elements -->
+  <meta charset="utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <title>
+    
+      Yujing Ren | Tight-Binding Method and an example of monolayer graphene's band structure.
+    
+  </title>
+
+  <!-- Dublin Core metadata for Zotero -->
+  <meta property="dc:title" content="Tight-Binding Method and an example of monolayer graphene's band structure." />
+  <meta property="dc:creator" content="Yujing Ren" />
+  <meta property="dc:identifier" content="http://localhost:4000/texts/tight-binding-with-graphene-band-structure/" />
+  
+  
+  
+  <meta property="dc:source" content="Yujing Ren" />
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Tight-Binding Method and an example of monolayer graphene's band structure." />
+  <meta property="og:url" content="http://localhost:4000/texts/tight-binding-with-graphene-band-structure/" />
+  <meta property="og:image" content="http://localhost:4000/assets/open-graph-logo.png" />
+  <meta property="og:image:width" content="200" />
+  <meta property="og:image:height" content="200" />
+  <meta property="fb:admins" content="elotroalex" />
+  <meta property="fb:app_id" content="589495744558280" />
+
+
+  <meta property="og:description" content="An Ed edition">
+  <meta property="og:type" content="article" />
+
+
+  <!-- Enable MathJax support -->
+  
+<!--
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\(', '\)'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+-->
+  
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+  </script>
+
+
+
+
+  <!-- Enable KaTeX support-->
+  
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/apple-touch-icon-precomposed.png" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml" />
+</head>
+
+
+  <body class="theme-base-darkblue">
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!--
+  Target for toggling the sidebar `.sidebar-checkbox` is for regular styles, `#sidebar-checkbox` for
+  behavior.
+-->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Hi, you've reached Yujing Ren's Blogs. Feel free to go around and contact me!</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/blogs/">Blogs</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/contactme/">Contact me</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+    <!--
+    <span style='cursor:pointer;' onclick="javascript:var hypothesis = document.createElement('script');
+      hypothesis.setAttribute('src','https://hypothes.is/embed.js');
+      document.head.appendChild(hypothesis);"><a class="sidebar-nav-item">Annotate me</a></span>
+
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/texts/tight-binding-with-graphene-band-structure//" data-proofer-ignore>Annotate me</a>
+    <script src="https://hypothes.is/embed.js" async></script>
+    -->
+
+    <!--
+    <a class="sidebar-nav-item" href="https://github.com/minicomp/ed" target="_blank">GitHub project</a>
+    -->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      Powered by <a href="https://jekyllrb.com/">jekyll</a> and <a href="https://minicomp.github.io/ed/">Ed.</a>
+    </p>
+  </div>
+</aside>
+
+    
+
+    <!--
+      Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
+      collisions with our real content.
+    -->
+    <div class="wrap">
+      <header class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Yujing Ren</a>
+            <br><small>Personal Blogs</small>
+          </h3>
+        </div>
+      </header>
+
+      <main class="container content" id="main">
+        <article class="post">
+  <center><span style="font-size: 30px;color:#0569ff;">Tight-Binding Method and an example of monolayer graphene's band structure.</span> <br></center>
+  <p style="text-align: center;">7 April, 2020</p>
+
+  
+  <br>
+  <p style="font-size: 18px; text-align: center;font-style: italic;"><b> Introduction: </b>Tight-Binding Method was developed almost 100 years ago. But in recent years, it shined when dealing with some solids. Most of old textbooks do not introduce this method in a practical way and I got confused when one of classmate used a "modern" type of Tight-Binding Method. So here, I summarized this method and gave an nice example of monolayer graphene.</p>
+  <br>
+  
+
+  <hr>
+
+  <h1 id="introduction-to-tight-binding-method">Introduction to Tight Binding Method</h1>
+
+<p><em>Tight binding method</em> was developed almost 100 years ago. It was used to calculate solids’ band structures under some circumstances, in order to reduce calculation efforts. Imagine there is an atom, with electrons flying around. According to quantum mechanics, each electron is at a specific energy level, and has an orbit (1s, 2p, 3d, etc.). When you put two atoms A and B together, due to nuclei B has interaction on electron in atom A, this electron’s energy level and orbit will deviate from previous isolated atom situation. But these two atoms are not too close, which makes this deviation small.</p>
+
+<p>Based on ideas above, band structures of solids can be approximated with knowing free atom orbits and some assumptions. If <code class="highlighter-rouge">$\phi_n$</code> is a bound level of free atom Hamiltonian <code class="highlighter-rouge">$H_{at}$</code>, then</p>
+
+<p><code class="highlighter-rouge">
+$$
+(1)\ \ H_{at}\phi_n = E_n \phi_n
+$$
+</code>
+Note that, <code class="highlighter-rouge">$n$</code> stands for different atomic energy level: 1s, 2d, 3f, etc.</p>
+
+<p>We want to use these atom orbits to construct band structures. But in many cases, there are more than one atom in a primitive cell. If so, molecule orbits are used to construct band structures instead of each atom orbit. And molecule orbits are constructed by atom orbits in one primitive cell.</p>
+
+<p>So, the wave function construction is like below</p>
+
+<p><code class="highlighter-rouge">$$
+\text{Molecule orbit: }\psi_n(\vec r) = \sum_{m=1}^M a_m \phi^m_n(\vec r), \text{ M is the number of atoms in one primitive cell}
+$$</code></p>
+
+<p><code class="highlighter-rouge">$$
+\text{Band structure: }\psi = \sum_{N=1}^{N_1N_2N_3} c_N\psi_n(\vec r - \vec R_N),\ N_1N_2N_3\text{ is the total primitive cells number.}
+$$</code></p>
+
+<p>Well for most of time, these two summations’ order is reversed:</p>
+
+<p><code class="highlighter-rouge">
+$$
+(2)\ \ \psi = \sum_{m=1}^M a_m \sum_{N=1}^{N_1N_2N_3}c_N\phi^m_n(\vec r-\vec R_N) = \sum_{m=1}^M a_m \Phi^m(\vec r)
+$$
+</code></p>
+
+<p>Considering Bloch theorem, coefficient <code class="highlighter-rouge">$c_N$</code> must be <code class="highlighter-rouge">$exp(i\vec k\cdot \vec R_N)$</code>. Once we know the wave function assumption and variables in it, variational principles makes everything handy:</p>
+
+<p><code class="highlighter-rouge">
+$$
+(3)\ \ E = \langle H \rangle = \frac{ \langle \psi| H | \psi \rangle }
+{\langle \psi | \psi\rangle}
+ =\frac{ \sum_{i,j=1}^Ma^*_ia_j H_{ij} }
+ {\sum_{i,j=1}^Ma^*_ia_jS_{ij}}, \\\text{with }H_{ij} = \langle \Phi^i |H|\Phi^j \rangle,\ S_{ij} = \langle \Phi^i|\Phi^j \rangle
+$$
+</code></p>
+
+<p>Since <code class="highlighter-rouge">$\psi$</code> may not be normalized, <code class="highlighter-rouge">$\langle \psi | \psi\rangle$</code> occurs in the energy expression. Now, variational principles say that <code class="highlighter-rouge">$\partial E/\partial a_x = 0$</code>. This gives</p>
+
+<p><code class="highlighter-rouge">
+$$
+(4)\ \ \sum_{j=1}^M H_{xj}a_j = E\sum_{j=1}^MS_{xj}a_j
+$$</code></p>
+
+<p>So, <code class="highlighter-rouge">$(H)_{xj}$</code> and <code class="highlighter-rouge">$(S)_{xj}$</code> are two matrices, band structure problems are now general eigen value problem <code class="highlighter-rouge">$det(H-ES)=0$</code>. <code class="highlighter-rouge">$S$</code> is called <i>overlapping integral matrix</i> and <code class="highlighter-rouge">$H$</code> is called <i>transfer matrix</i>.</p>
+
+<p>In each specific circumstance, making some reasonable assumptions about matrix <code class="highlighter-rouge">$H$</code> and <code class="highlighter-rouge">$S$</code>.Then, using MatLab or other langleuages, this should be easy to solve. In the example below, tight binding method will be used to get some ideas about monolayer graphene’s band structure.</p>
+
+<h1 id="band-structure-of-monolayer-graphene">Band structure of monolayer graphene</h1>
+
+<p>Monolayer graphene’s primitive cell has two atoms, called A and B. So, <code class="highlighter-rouge">$M = 2$</code> and <code class="highlighter-rouge">$H,S$</code> are matrices with dimension 2*2.</p>
+
+<p>An image of monolayer graphene in real space:</p>
+
+<p><img src="/assets/monolayer-graphene/Annotation-2020-04-07-215622.png" alt="Monolayer-layer-graphene-in-real-space" /></p>
+
+<h2 id="diagonal-matrix-element">Diagonal matrix element</h2>
+
+<p>By definition:</p>
+
+<p><code class="highlighter-rouge">
+$$
+(5)\ \ H_{AA} = H_{BB} = \langle \Phi^A | H | \Phi^A \rangle\\
+=\sum_{N=1}^{N_1N_2N_3}\sum_{N'=1}^{N_1N_2N_3}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | H | \phi^A_{2p}(\vec r - \vec R_N) \rangle
+$$</code></p>
+
+<p><code class="highlighter-rouge">$$
+(6)\ \ S_{AA} = S_{BB} = \langle \Phi^A | \Phi^A \rangle\\ 
+= \sum_{N=1}^{N_1N_2N_3}\sum_{N'=1}^{N_1N_2N_3}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) |  \phi^A_{2p}(\vec r - \vec R_N) \rangle
+$$</code>
+Note that index <code class="highlighter-rouge">$2p$</code> means that we’re considering <code class="highlighter-rouge">$2p$</code> electron orbit of graphene. More specifically, all the <code class="highlighter-rouge">$p$</code> orbits are <code class="highlighter-rouge">$p_z$</code> orbits, therefore have rotational symmetry (will be used in “off-diagonal matrix element”).</p>
+
+<p>And then we need to make a assumption: <code class="highlighter-rouge">$N' \neq N$</code> terms in equation (5) and (6) can be neglected. For <code class="highlighter-rouge">$S_{AA,BB}$</code> this makes sense because wave functions of different lattices have almost no overlapping since system is previously assumed to be tight-binding. The same for <code class="highlighter-rouge">$H_{AA,BB}$</code>. Therefore,</p>
+
+<p><code class="highlighter-rouge">
+$$
+(7)\ \ H_{AA} = H_{BB} = N_1N_2N_3E_{2p}\\
+(8)\ \ S_{AA} = S_{BB} = N_1N_2N_3
+$$</code></p>
+
+<h2 id="off-diagonal-matrix-element">Off-diagonal matrix element</h2>
+
+<p>By definition:</p>
+
+<p><code class="highlighter-rouge">$$
+(9)\ \ H_{AB} = H^*_{BA} = \langle \Phi^A | H | \Phi^B \rangle\\
+ =\sum_{N=1}^{N_1N_2N_3}\sum_{N'=1}^{N_1N_2N_3}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | H | \phi^B_{2p}(\vec r - \vec R_N) \rangle \\
+(10)\ \  S_{AB} = S^*_{BA} = \langle \Phi^A | \Phi^B \rangle \\
+  = \sum_{N=1}^{N_1N_2N_3}\sum_{N'=1}^{N_1N_2N_3}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | \phi^B_{2p}(\vec r - \vec R_N) \rangle
+$$</code>
+Then, assume that only integrals between nearest atom A and atom B are not zero:</p>
+
+<p><code class="highlighter-rouge">$$
+(9)\ \ H_{AB} = H^*_{BA} = \langle \Phi^A | H | \Phi^B \rangle\\
+ =\sum_{N=1}^{N_1N_2N_3}\sum_{\text{nearest }N'}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | H | \phi^B_{2p}(\vec r - \vec R_N) \rangle \\
+ =-\sum_{N=1}^{N_1N_2N_3}\sum_{\text{nearest }N'}\gamma_0e^{i\vec k\cdot (\vec R_N - \vec R_{N'})}
+ \\
+(10)\ \  S_{AB} = S^*_{BA} = \langle \Phi^A | \Phi^B \rangle \\
+  = \sum_{N=1}^{N_1N_2N_3}\sum_{
+  \text{nearest }N'}c_{N'}^*c_N \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | \phi^B_{2p}(\vec r - \vec R_N) \rangle\\
+  = \sum_{N=1}^{N_1N_2N_3}\sum_{\text{nearest }N'}s_0e^{i\vec k\cdot (\vec R_N - \vec R_{N'})}
+$$</code></p>
+
+<p>With,</p>
+
+<p><code class="highlighter-rouge">$$
+(11)\ \ \gamma_0 = -\langle \phi^A_{2p}(\vec r - \vec R_{N'}) | H | \phi^B_{2p}(\vec r - \vec R_N) \rangle,\\
+(12)\ \ s_0 = \langle \phi^A_{2p}(\vec r - \vec R_{N'}) | \phi^B_{2p}(\vec r - \vec R_N) \rangle, \\
+\ N' \text{ and } N\text{ are nearest atom A and atom B}
+$$</code>
+For any nearest A atom and B atom pair, <code class="highlighter-rouge">$\gamma_0$</code> and <code class="highlighter-rouge">$s_0$</code> are the same. So these two parameters will not be calculated. Instead, they are tunable parameters, to fit actual experimental data.</p>
+
+<p>For each B atom, there are three nearest A atoms, with <code class="highlighter-rouge">$R_{N'} - R_N$</code> equals to</p>
+
+<p><code class="highlighter-rouge">$$
+\vec \delta_1 = (a, 0) \\
+\vec \delta_2 = (-\frac 1 2 a, \frac{\sqrt 3}{2} a) \\
+\vec \delta_2 = (-\frac 1 2 a, - \frac{\sqrt 3}{2} a) \\
+$$</code>
+Therefore <code class="highlighter-rouge">$H_{AB}$</code> and <code class="highlighter-rouge">$S_{AB}$</code> is
+<code class="highlighter-rouge">$$
+H_{AB} = H^*_{BA} = -N_1N_2N_3 \gamma_0 (e^{-ik_xa} + 2e^{ik_xa/2}\cos\frac{\sqrt 3}{2}k_y a)\\
+S_{AB} = S^*_{BA} = N_1N_2N_3 s_0 (e^{-ik_xa} + 2e^{ik_xa/2}\cos\frac{\sqrt 3}{2}k_y a)
+$$</code>
+Now solve it.</p>
+
+<h2 id="result-band-structure-linear-dispersion-around-fermi-level">Result: Band structure, linear dispersion around fermi level</h2>
+
+<p>Note that result below uses parameter: different values do not change the shape of resulting band curve but only the scale.
+<code class="highlighter-rouge">$$
+\gamma_0 = 3.033 \text{ eV},\\
+s_0 = 0.129.
+$$</code></p>
+
+<p>Band structure figure in the figure below:</p>
+
+<p><img src="/assets/monolayer-graphene/monolayer-graphene-3D-band.png" alt="3d-monolayer-band" /></p>
+
+<p>See this figure from the top and calculate more area in the extended brillouin zone. The figrue down below shows a hexagon with different angle (90 degree different) compared to a monolayer graphene’s real space hexagon lattice.</p>
+
+<p><img src="/assets/monolayer-graphene/monolayer-graphene-2D-band.png" alt="2d-monolayer-band" /></p>
+
+<p>Zoom in to the fermi level and look into results for only one direction:</p>
+
+<p><img src="/assets/monolayer-graphene/monolayer-graphene-linear-dispersion.png" alt="linear-dispersion" /></p>
+
+<p>Around the fermi level, dispersion can be well approximated by a linear expression. Calculation wiht better resolution in <code class="highlighter-rouge">$k_y$</code> shows that tight-binding method gives a strictly gapless dirac cone dispersion.</p>
+
+
+  <p style="text-align: right;color: #999999;font-size: medium;">Last modified: 8 April, 2020</p>
+
+  <p style="font-size: 25px;"><a href="/blogs/">&larr;  Back to blogs list</a></p>
+</article> <br>
+        <hr>
+        <p style="text-align: right;color:#999999;font-size: 17px;font-family: '黑体';">
+          顺颂时祺。
+        </p>
+      </main>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+
+    // Highlight search Query
+    var url = window.location.href;
+      if (url.lastIndexOf("?q=") > 0) {
+        // get the index of the parameter, add three (to account for length)
+        var stringloc = url.lastIndexOf("?q=") + 3;
+        // get the substring (query) and decode
+        var searchquery = decodeURIComponent(url.substr(stringloc));
+        // regex matches at beginning of line, end of line or word boundary, useful for poetry
+        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
+        // get, add mark and then set content
+        var content = document.getElementById("main").innerHTML;
+        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
+      }
+
+      // Toggle sidebar
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             !sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+<!-- Facebook SDK for JavaScript -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '589495744558280',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<!-- KaTeX -->
+<!-- <script>
+  $("script[type='math/tex']").replaceWith(function() {
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function() {
+      var tex = $(this).html();
+      // replace() here is due to CDATA wrapper (#224). KaTeX chokes on the % character,
+      // which is unfortunate (and should probably be reported).
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
+
+  </body>
+</html> -->

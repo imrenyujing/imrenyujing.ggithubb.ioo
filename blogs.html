@@ -4,7 +4,7 @@ title: Blogs
 ---
 
 <div class = "blogs-list">
-{% for item in site.texts %}
+{% for item in site.texts reversed %}
     <hr>
     <a href="{{ site.baseurl }}{{ item.url }}" style="font-size: 25px;">{{ item.title }}</a> <br>
     <span style="font-size:15px;color:#999999;">{{ item.time }}</span> <br>
